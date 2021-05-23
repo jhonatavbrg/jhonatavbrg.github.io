@@ -1,0 +1,176 @@
+@font-face {
+  font-family: Bluu Next;
+  src: url('https://www.fontsquirrel.com/fonts/download/bluu-next.otf') format('OpenType');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Bluu Next, serif;
+}
+
+hr {
+  border-top: 0.1rem solid rgb(219, 219, 219);
+  height: 0.1rem;
+  margin: 2rem 0;
+}
+
+.header {
+  display: flex;
+  background-color: rgb(50, 167, 145);
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+}
+
+.header h1 {
+  color: white;
+  font-size: 2em;
+  font-weight: 900;
+}
+
+.trybewarts-header-logo {
+  height: 80%;
+}
+
+.trybewarts-login {
+  display: flex;
+}
+
+form p {
+  text-align: center;
+}
+
+header input {
+  border-radius: 4px;
+  border: none;
+  padding: 10px 4px;
+  margin: 0 4px;
+  width: 180px;
+}
+
+.space {
+  margin-left: 6px;
+}
+
+#btnlogin {
+  background-color: rgb(78, 44, 131);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  border-width: 1px;
+  padding: 10px 4px;
+}
+
+.radio {
+  letter-spacing: -1px;
+  margin-left: 10px;
+}
+
+.control {
+  left: 1px;
+  top: -10px;
+}
+
+#textarea {
+  padding: 10px;
+  font-size: 1em;
+  width: 100%;
+  resize: none;
+}
+
+#counter {
+  display: flex;
+  justify-content: flex-end;
+  margin: -30px 6px;
+}
+
+.textarea {
+  display: flex;
+  margin: 4px -10px;
+  border: none;
+  pointer-events: none;
+}
+
+.textarea:not( [ rows ] ) {
+  max-height: 0;
+  min-height: 0;
+}
+
+#label-infos {
+  top: 40px;
+}
+
+#submit-btn {
+  background-color: rgb(78, 44, 131);
+  color: white;
+  bottom: -48px;
+}
+
+.container-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(60, 64, 74);
+  color: white;
+  text-align: center;
+}
+
+main {
+  width: 100%;
+  justify-content: space-around;
+}
+
+#evaluation-form {
+  min-width: 675px;
+  max-width: 675px;
+}
+
+form h2 {
+  text-align: center;
+  font-size: xx-large;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+}
+
+.user-name {
+  width: 50%;
+  margin-right: 10px;
+}
+
+#input-email {
+  width: 50%;
+  margin-right: 10px;
+}
+
+.row1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.column1 {
+  display: flex;
+  flex-direction: column;
+}
+
+#house {
+  width: 50%;
+}
+
+#form-pt2 {
+  align-items: baseline;
+  justify-content: space-evenly;
+}
+
+#check-container1 , #check-container2 {
+  align-items: baseline;
+  justify-content: center;
+}
+
+.input-container {
+  width: 33%;
+}

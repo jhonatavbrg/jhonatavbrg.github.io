@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Project Pixel Art</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header id="container-title">
+    <h1 id="title">Paleta de Cores</h1>
+  </header>
+  <main>
+    <div id="container-palette">
+      <table id="color-palette">
+        <thead>
+          <tr>
+            <td class="color selected" id="black"></td>
+            <td class="color" id="darkgreen"></td>
+            <td class="color" id="blue"></td>
+            <td class="color" id="red"></td>
+          </tr>
+        </thead>
+      </table>
+    </div>
+    <div class="container-button" id="button-container">
+      <input type="number" id="board-size" min="1" max="50">
+      <button id="generate-board">VQV</button>
+      <button id="clear-board">Limpar</button>
+    </div>
+    <div id="pixels">
+      <table id="pixel-board">
+        <tbody>
+          <tr>
+            <td class="pixel"></td>
+            <td class="pixel"></td>
+            <td class="pixel"></td>
+            <td class="pixel"></td>
+            <td class="pixel"></td>
+          </tr>
+          <tr>
+            <td class="pixel"></td>
+            <td class="pixel"></td>
+            <td class="pixel"></td>
+            <td class="pixel"></td>
+            <td class="pixel"></td>
+          </tr>
+          <tr>
+            <td class="pixel"></td>
+            <td class="pixel"></td>
+            <td class="pixel"></td>
+            <td class="pixel"></td>
+            <td class="pixel"></td>
+          </tr>
+          <tr>
+            <td class="pixel"></td>
+            <td class="pixel"></td>
+            <td class="pixel"></td>
+            <td class="pixel"></td>
+            <td class="pixel"></td>
+          </tr>
+          <tr>
+            <td class="pixel"></td>
+            <td class="pixel"></td>
+            <td class="pixel"></td>
+            <td class="pixel"></td>
+            <td class="pixel"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="selected-color">
+      <p>Cor selecionada:</p>
+      <div id="showColorSelected"></div>
+    </div>
+  </main>
+  <footer><p id="footer-container">Copyright&copy;2021 Jhonata Braga - Todos os direitos reservados</p></footer>
+  <script src="./script.js"></script>
+</body>
+</html>
