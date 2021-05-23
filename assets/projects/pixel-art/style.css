@@ -1,13 +1,14 @@
 body {
-  background-image: url(/wallpaper.jpg);
-  background-position: center;
+  background-image: url(https://i.pinimg.com/originals/54/43/1f/54431f0022c01fa4f746f7ccc0db8f3f.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  background-repeat: no-repeat;
 }
 
 p {
   color: white;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
 }
 
 .color {
