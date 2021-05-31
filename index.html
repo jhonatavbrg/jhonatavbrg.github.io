@@ -167,14 +167,14 @@
                 <h2 class="section-title">Contact</h2>
 
                 <div class="contact__container bd-grid">
-                    <form action="mailto:jhonatavbrg@gmail.com" method="POST" enctype="multipart/form-data" class="contact__form">
+                    <form action="https://formsubmit.co/jhonatavbrg@gmail.com" method="POST" class="contact__form">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_subject" value="New email">
                         <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="email" name="email" placeholder="Email" class="contact__input" required>
+                        <input type="hidden" name="_next" value="https://jhonatavbrg.github.io/pages/thanks_submit.html">
+                        <textarea type="text" name="name" style="resize: none;" cols="0" rows="10" class="contact__input" placeholder="Write your message here" required></textarea>
                         <input type="submit" value="Send" class="contact__button button">
-                    </form>
-                </div>
-            </section>
         </main>
 
         <!--===== FOOTER =====-->
