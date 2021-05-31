@@ -12,7 +12,7 @@
     <h1 id="title">Paleta de Cores</h1>
   </header>
   <main>
-    <div id="container-palette">
+    <div class="container-palette">
       <table id="color-palette">
         <thead>
           <tr>
@@ -25,11 +25,13 @@
       </table>
     </div>
     <div class="container-button" id="button-container">
-      <input type="number" id="board-size" min="1" max="50">
-      <button id="generate-board">VQV</button>
-      <button id="clear-board">Limpar</button>
+      <div class="buttons">
+        <input type="number" id="board-size" min="1" max="50">
+        <button id="generate-board">VQV</button>
+        <button id="clear-board">Limpar</button>
+      </div>
     </div>
-    <div id="pixels">
+    <div class="container-board" id="pixels">
       <table id="pixel-board">
         <tbody>
           <tr>
@@ -70,7 +72,7 @@
         </tbody>
       </table>
     </div>
-    <div id="selected-color">
+    <div class="container-color-selected" id="selected-color">
       <p>Cor selecionada:</p>
       <div id="showColorSelected"></div>
     </div>
