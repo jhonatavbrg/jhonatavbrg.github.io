@@ -123,6 +123,20 @@ main {
   justify-content: space-around;
 }
 
+.container-forms {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-response {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
 #evaluation-form {
   min-width: 675px;
   max-width: 675px;

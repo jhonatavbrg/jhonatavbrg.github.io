@@ -58,37 +58,45 @@ function getValues() {
   return informationsForm;
 }
 
-function createForms() {
-  const saveValues = getValues();
-  let temp;
-  for (let i = 0; i < saveValues.length; i += 1) {
-    temp = document.createElement('p').textContent = saveValues[i];
-    forms.appendChild(temp);
-  }
-  console.log(temp)
-}
+submitBtn.addEventListener('click', (event) => {
+  event.preventDefault();
 
-function submitForms(e) {
-  e.preventDefault();
-  // const elements = createForms();
-  const one = document.getElementById('container-fullname');
-  const two = document.getElementById('container-email-house');
-  const three = document.getElementById('container-rating');
-  const four = document.getElementById('container-textarea');
-  const partition = document.getElementById('second-partition');
-  const familyContent = document.getElementById('form-pt2');
-  one.remove();
-  two.remove();
-  three.remove();
-  four.remove();
-  partition.remove();
-  familyContent.remove();
-  createForms();
-  // for (let i = 0; i < elements.length; i += 1) {
-  //   forms.appendChild(elements[i]);
-  // }
-  // forms.appendChild(document.createElement('hr'));
-}
-
-submitBtn.addEventListener('click', submitForms);
-// submitBtn.addEventListener('click', createForms);
+  const informationForms = getValues();
+  const keysObj = Object.keys(informationForms);
+  const valuesObj = Object.values(informationForms);
+  
+  const div = document.getElementById('container-forms');
+  const formsResponse = document.createElement('div');
+  formsResponse.classList.add('container-response');
+  div.appendChild(formsResponse);
+  const nameOnParagraph = document.createElement('p');
+  nameOnParagraph.classList.add('paragraph-info');
+  nameOnParagraph.innerText = `${keysObj[0]}: ${valuesObj[0]}`;
+  formsResponse.appendChild(nameOnParagraph);
+  const emailOnParagraph = document.createElement('p');
+  emailOnParagraph.classList.add('paragraph-info');
+  emailOnParagraph.innerText = `${keysObj[1]}: ${valuesObj[1]}`;
+  formsResponse.appendChild(emailOnParagraph);
+  const houseOnParagraph = document.createElement('p');
+  houseOnParagraph.classList.add('paragraph-info');
+  houseOnParagraph.innerText = `${keysObj[2]}: ${valuesObj[2]}`;
+  formsResponse.appendChild(houseOnParagraph);
+  const familyOnParagraph = document.createElement('p');
+  familyOnParagraph.classList.add('paragraph-info');
+  familyOnParagraph.innerText = `${keysObj[3]}: ${valuesObj[3]}`;
+  formsResponse.appendChild(familyOnParagraph);
+  const contentsOnParagraph = document.createElement('p');
+  contentsOnParagraph.classList.add('paragraph-info');
+  contentsOnParagraph.innerText = `${keysObj[4]}: ${valuesObj[4]}`;
+  formsResponse.appendChild(contentsOnParagraph);
+  const assessmentOnParagraph = document.createElement('p');
+  assessmentOnParagraph.classList.add('paragraph-info');
+  assessmentOnParagraph.innerText = `${keysObj[5]}: ${valuesObj[5]}`;
+  formsResponse.appendChild(assessmentOnParagraph);
+  const commentOnParagraph = document.createElement('p');
+  commentOnParagraph.classList.add('paragraph-info');
+  commentOnParagraph.innerText = `${keysObj[6]}: ${valuesObj[6]}`;
+  formsResponse.appendChild(commentOnParagraph);
+  
+  forms.remove();
+});
