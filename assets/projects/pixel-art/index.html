@@ -11,7 +11,7 @@
   <header id="container-title">
     <h1 id="title">Paleta de Cores</h1>
   </header>
-  <main>
+  <main class="container-main">
     <div class="container-palette">
       <table id="color-palette">
         <thead>
@@ -26,9 +26,10 @@
     </div>
     <div class="container-button" id="button-container">
       <div class="buttons">
-        <input type="number" id="board-size" min="1" max="50">
-        <button id="generate-board">VQV</button>
-        <button id="clear-board">Limpar</button>
+        <input type="number" value="5" id="board-size" min="1" max="50">
+        <button id="generate-board">Aumentar</button>
+        <button id="clear-board">Limpar tudo</button>
+        <button id="clear">Limpar última</button>
       </div>
     </div>
     <div class="container-board" id="pixels">
@@ -74,10 +75,12 @@
     </div>
     <div class="container-color-selected" id="selected-color">
       <p>Cor selecionada:</p>
-      <div id="showColorSelected"></div>
+      <span id="showColorSelected"></span>
     </div>
   </main>
-  <footer><p id="footer-container">Copyright&copy;2021 Jhonata Braga - Todos os direitos reservados</p></footer>
+  <footer id="footer-container">
+    <p>Copyright&copy;2021 Jhonata Braga - Todos os direitos reservados</p>
+  </footer>
   <script src="script.js"></script>
 </body>
 </html>

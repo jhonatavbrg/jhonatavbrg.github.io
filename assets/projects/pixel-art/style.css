@@ -4,11 +4,18 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  margin: 0;
+}
+
+.container-main {
+  justify-content: center;
+  align-items: center;
 }
 
 p {
   color: white;
   font-family: Montserrat, sans-serif;
+  -webkit-text-stroke: .4px black;
 }
 
 .color {
@@ -82,10 +89,13 @@ p {
 .container-board {
   display: block;
   margin: auto;
+  height: 100%;
 }
 
 .container-color-selected {
   display: flex;
+  padding: 1rem;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: auto;
@@ -102,7 +112,11 @@ p {
 }
 
 #footer-container {
+  display: flex;
+  margin: auto;
+  padding: 1rem;
   text-align: center;
+  justify-content: center;
 }
 
 /* @media screen and (max-width:  720px){
