@@ -197,6 +197,7 @@ form h2 {
 .input-container {
   width: 20%;
   margin: auto;
+  margin-top: 0.6rem;
 }
 
 #subjects-container {
