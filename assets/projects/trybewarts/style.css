@@ -132,13 +132,11 @@ main {
 #container-fullname {
   justify-content: center;
   align-items: center;
-  padding: 0.4rem;
 }
 
 #container-email-house {
   justify-content: center;
   align-items: center;
-  padding: 0.4rem;
 }
 
 .container-response {
@@ -165,14 +163,21 @@ form h2 {
 }
 
 .user-name {
-  width: 50%;
-  margin-right: 10px;
+  width: 48%;
+  margin: auto;
+  padding: 4px;
 }
 
 #input-email {
-  display: flex;
+  width: 48%;
+  margin: 4px auto;
+  padding: 4px;
+}
+
+#input-house {
+  width: 48%;
   margin: auto;
-  width: 50%;
+  padding: 4px;
 }
 
 .row1 {
@@ -183,10 +188,6 @@ form h2 {
 .column1 {
   display: flex;
   flex-direction: column;
-}
-
-#house {
-  width: 50%;
 }
 
 #form-pt2 {
