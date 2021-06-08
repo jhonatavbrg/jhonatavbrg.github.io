@@ -34,7 +34,7 @@ function getValues() {
   const lname = document.getElementById('input-lastname').value;
   const fullName = `${fname} ${lname}`;
   const email = document.getElementById('input-email').value;
-  const house = document.getElementById('house').value;
+  const house = document.getElementById('input-house').value;
   const contentLearn = document.querySelectorAll('input.subject:checked');
   const savedMensage = textarea.value;
   const family = document.querySelector('input[name="family"]:checked').value;
@@ -58,45 +58,57 @@ function getValues() {
   return informationsForm;
 }
 
-submitBtn.addEventListener('click', (event) => {
-  event.preventDefault();
-
+function generateResponse() {
   const informationForms = getValues();
   const keysObj = Object.keys(informationForms);
   const valuesObj = Object.values(informationForms);
   
+
   const div = document.getElementById('container-forms');
   const formsResponse = document.createElement('div');
   formsResponse.classList.add('container-response');
   div.appendChild(formsResponse);
+
   const nameOnParagraph = document.createElement('p');
   nameOnParagraph.classList.add('paragraph-info');
   nameOnParagraph.innerText = `${keysObj[0]}: ${valuesObj[0]}`;
   formsResponse.appendChild(nameOnParagraph);
+
   const emailOnParagraph = document.createElement('p');
   emailOnParagraph.classList.add('paragraph-info');
   emailOnParagraph.innerText = `${keysObj[1]}: ${valuesObj[1]}`;
   formsResponse.appendChild(emailOnParagraph);
+
   const houseOnParagraph = document.createElement('p');
   houseOnParagraph.classList.add('paragraph-info');
   houseOnParagraph.innerText = `${keysObj[2]}: ${valuesObj[2]}`;
   formsResponse.appendChild(houseOnParagraph);
+
   const familyOnParagraph = document.createElement('p');
   familyOnParagraph.classList.add('paragraph-info');
   familyOnParagraph.innerText = `${keysObj[3]}: ${valuesObj[3]}`;
   formsResponse.appendChild(familyOnParagraph);
+
   const contentsOnParagraph = document.createElement('p');
   contentsOnParagraph.classList.add('paragraph-info');
   contentsOnParagraph.innerText = `${keysObj[4]}: ${valuesObj[4]}`;
   formsResponse.appendChild(contentsOnParagraph);
+
   const assessmentOnParagraph = document.createElement('p');
   assessmentOnParagraph.classList.add('paragraph-info');
   assessmentOnParagraph.innerText = `${keysObj[5]}: ${valuesObj[5]}`;
   formsResponse.appendChild(assessmentOnParagraph);
+
   const commentOnParagraph = document.createElement('p');
   commentOnParagraph.classList.add('paragraph-info');
   commentOnParagraph.innerText = `${keysObj[6]}: ${valuesObj[6]}`;
   formsResponse.appendChild(commentOnParagraph);
-  
+
+  return div;
+}
+
+submitBtn.addEventListener('click', (event) => {
+  event.preventDefault();
+  generateResponse();
   forms.remove();
 });
